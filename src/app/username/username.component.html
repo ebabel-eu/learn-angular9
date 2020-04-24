@@ -8,14 +8,14 @@
 
 <div *ngIf="usernameValue">
   <p>Hello {{usernameValue}}!</p>
-  <p>How are you today? Ready to explore the universe with me, {{usernameValue}}?</p>  
+  <p>How are you today? Ready to explore the universe with me, {{usernameValue}}?</p>
 </div>
 
 <div class="btn-group">
   <button type="button" class="btn btn-large btn-primary" [disabled]="!usernameValue">
     {{usernameValue ? 'Ready to take off!' : 'Not quite ready yet'}}
   </button>
-  
+
   <button type="button" (click)="resetUsernameValue()" class="btn btn-large btn-secondary" [disabled]="!usernameValue">
     Reset
   </button>

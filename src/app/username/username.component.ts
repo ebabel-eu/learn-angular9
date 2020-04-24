@@ -16,5 +16,4 @@ export class UsernameComponent implements OnInit {
   resetUsernameValue(): void {
     this.usernameValue = '';
   }
-
 }
